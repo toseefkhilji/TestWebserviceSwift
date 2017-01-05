@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0E16705F0D30BBB8ADC08D /* Pods_TestWebserviceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C61D1EC429A22A51939F6E /* Pods_TestWebserviceSwift.framework */; };
 		F28EF02F1E1E76440028017F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28EF02E1E1E76440028017F /* AppDelegate.swift */; };
 		F28EF0311E1E76440028017F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28EF0301E1E76440028017F /* ViewController.swift */; };
 		F28EF0341E1E76440028017F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28EF0321E1E76440028017F /* Main.storyboard */; };
 		F28EF0361E1E76440028017F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28EF0351E1E76440028017F /* Assets.xcassets */; };
 		F28EF0391E1E76440028017F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28EF0371E1E76440028017F /* LaunchScreen.storyboard */; };
+		F28EF0431E1E87640028017F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28EF0421E1E87640028017F /* Result.swift */; };
+		F28EF0451E1E88A00028017F /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28EF0441E1E88A00028017F /* ResultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49641C92F03772613A6BD147 /* Pods-TestWebserviceSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWebserviceSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWebserviceSwift/Pods-TestWebserviceSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		A9C61D1EC429A22A51939F6E /* Pods_TestWebserviceSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestWebserviceSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81F2C20EF74C9858E63D018 /* Pods-TestWebserviceSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWebserviceSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWebserviceSwift/Pods-TestWebserviceSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F28EF02B1E1E76440028017F /* TestWebserviceSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWebserviceSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28EF02E1E1E76440028017F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F28EF0301E1E76440028017F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		F28EF0351E1E76440028017F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F28EF0381E1E76440028017F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F28EF03A1E1E76440028017F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F28EF0421E1E87640028017F /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F28EF0441E1E88A00028017F /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0E16705F0D30BBB8ADC08D /* Pods_TestWebserviceSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC0A586EC21EE28907F15D8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C61D1EC429A22A51939F6E /* Pods_TestWebserviceSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F28EF0221E1E76440028017F = {
 			isa = PBXGroup;
 			children = (
 				F28EF02D1E1E76440028017F /* TestWebserviceSwift */,
 				F28EF02C1E1E76440028017F /* Products */,
+				FE8C0B957523412E2C2135FA /* Pods */,
+				AC0A586EC21EE28907F15D8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +75,23 @@
 			children = (
 				F28EF02E1E1E76440028017F /* AppDelegate.swift */,
 				F28EF0301E1E76440028017F /* ViewController.swift */,
+				F28EF0421E1E87640028017F /* Result.swift */,
+				F28EF0441E1E88A00028017F /* ResultTableViewCell.swift */,
 				F28EF0321E1E76440028017F /* Main.storyboard */,
 				F28EF0351E1E76440028017F /* Assets.xcassets */,
 				F28EF0371E1E76440028017F /* LaunchScreen.storyboard */,
 				F28EF03A1E1E76440028017F /* Info.plist */,
 			);
 			path = TestWebserviceSwift;
+			sourceTree = "<group>";
+		};
+		FE8C0B957523412E2C2135FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49641C92F03772613A6BD147 /* Pods-TestWebserviceSwift.debug.xcconfig */,
+				D81F2C20EF74C9858E63D018 /* Pods-TestWebserviceSwift.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F28EF03D1E1E76440028017F /* Build configuration list for PBXNativeTarget "TestWebserviceSwift" */;
 			buildPhases = (
+				6A14EC00F6DDD0FD4973FDA3 /* [CP] Check Pods Manifest.lock */,
 				F28EF0271E1E76440028017F /* Sources */,
 				F28EF0281E1E76440028017F /* Frameworks */,
 				F28EF0291E1E76440028017F /* Resources */,
+				0720E02E76972BD0131F19FC /* [CP] Embed Pods Frameworks */,
+				46DB0BBC3D03B4F5DF2AAF7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +164,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0720E02E76972BD0131F19FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestWebserviceSwift/Pods-TestWebserviceSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46DB0BBC3D03B4F5DF2AAF7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestWebserviceSwift/Pods-TestWebserviceSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A14EC00F6DDD0FD4973FDA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F28EF0271E1E76440028017F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F28EF0311E1E76440028017F /* ViewController.swift in Sources */,
+				F28EF0431E1E87640028017F /* Result.swift in Sources */,
+				F28EF0451E1E88A00028017F /* ResultTableViewCell.swift in Sources */,
 				F28EF02F1E1E76440028017F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +339,7 @@
 		};
 		F28EF03E1E1E76440028017F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49641C92F03772613A6BD147 /* Pods-TestWebserviceSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestWebserviceSwift/Info.plist;
@@ -268,6 +352,7 @@
 		};
 		F28EF03F1E1E76440028017F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D81F2C20EF74C9858E63D018 /* Pods-TestWebserviceSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestWebserviceSwift/Info.plist;
@@ -297,6 +382,7 @@
 				F28EF03F1E1E76440028017F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
